@@ -1,0 +1,36 @@
+<table class="table table-striped">
+	<thead class="fa-border">
+		<tr>
+        <th><strong>Titulo 1</strong></th>
+        <th><strong>Titulo 2</strong></th>
+		</tr>
+	</thead>
+	<tbody ng-repeat="dado in lista">
+		<tr>
+      <td>{{dado.nome}}</td>
+      <td>{{dado.idade}}</td>
+		</tr>
+		<tr>
+        <td colspan="7" class="bg-info" >
+          <table class="table table-striped">
+            <thead class="fa-border">
+              <tr>
+                <th><strong>n1</strong></th>
+                <th><strong>n2</strong></th>
+                <th><strong>n3</strong></th>
+                <th><strong>n4</strong></th>
+              </tr>
+            </thead>
+            <tbody ng-repeat="detalhe in dado.lista2">
+              <tr>
+                <td>{{detalhe.nome}}</td>
+                <td>{{detalhe.descricao}}</td>
+                <td>{{detalhe.tempo}}</td>
+                <td>{{detalhe.data}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+		</tr>
+	</tbody>
+</table>
